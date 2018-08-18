@@ -1,0 +1,49 @@
+
+/* grid-based layout with styles making use of the flexbox layout */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    flex: 1;
+}
+
+@media screen and (max-width: 400px) {
+    .box > a > img {
+        width: 250px;
+    }
+    .box > a > p {
+        font-size: 0.9em;
+    }
+    .container__mainimg {
+        height: 200px;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 800px) {
+    .box > a > img {
+        width: 350px;
+    }
+    .container__mainimg {
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 801px) {
+    .box > a > img {
+        width: 90%;
+    }
+    .container__mainimg {
+        height: 450px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .header__logo {
+        height: 36px;
+    }
+    .header__title > h1 {
+        font-size: 2em;
+    }   
+}
