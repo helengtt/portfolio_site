@@ -16,11 +16,17 @@ body {
     font-size: 12px;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     margin: 0; 
 }
 
-header, section, div {
+header,
+section,
+div {
     box-sizing: border-box;
 }
 
@@ -104,6 +110,7 @@ main
     text-transform: uppercase;
 }
 
-.box h2:hover, .box p:hover {
+.box h2:hover,
+.box p:hover {
     color: #02b3e4;
 }
